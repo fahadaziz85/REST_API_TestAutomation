@@ -2,12 +2,14 @@ import files.PayLoad;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
 public class Basics {
-    public static void main(String[] args) {
+    @Test
+    public void testBasics(){
 
         /**
          * USECASE: Validate if Add place API is working as expected
